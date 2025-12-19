@@ -4,6 +4,7 @@ public class BackgroundLoop : MonoBehaviour
 {
     public float scrollSpeed = 2f;
     private float width;
+
     void Start()
     {
         width = GetComponent<SpriteRenderer>().bounds.size.x;
@@ -12,6 +13,7 @@ public class BackgroundLoop : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.left * scrollSpeed * Time.deltaTime);
+        
         if (transform.position.x < -width)
         {
             Reposition();
@@ -22,5 +24,4 @@ public class BackgroundLoop : MonoBehaviour
     {
         transform.Translate(Vector2.right * width * 2);
     }
-
 }
