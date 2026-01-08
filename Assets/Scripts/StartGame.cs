@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class StartGame : MonoBehaviour
 {  
@@ -34,10 +33,11 @@ public class StartGame : MonoBehaviour
         playerController.OnJump();
         playerRB.gravityScale = 2.8f;
 
+        scoreText.SetActive(true);
+
         startscreen.SetActive(false);
         startButton.SetActive(false);
-        scoreText.SetActive(true);
-        
+
         Debug.Log("Start button pressed");
     } 
 }
