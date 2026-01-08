@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class StartGame : MonoBehaviour
+public class GameStarter : MonoBehaviour
 {  
     [Header ("Player")]
     [SerializeField] PlayerController playerController;
@@ -14,15 +14,18 @@ public class StartGame : MonoBehaviour
 
     [Header ("UI elements")]
     [SerializeField] GameObject startscreen;
-    [SerializeField] GameObject gameover;
-    [SerializeField] GameObject startButton;
     [SerializeField] GameObject scoreText;
 
     [Header ("In game elements")]
     [SerializeField] PipeSpawner pipeSpawner;
 
-    public void StartGameButton()
+    [Header ("Game Starter")]
+    [SerializeField] GameStarter gameStarter;
+
+    void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKey(KeyCode.Mouse0))
+        {
         backgroundloop1.enabled = true;
         backgroundloop2.enabled = true;
         groundloop1.enabled = true;
@@ -30,14 +33,11 @@ public class StartGame : MonoBehaviour
         pipeSpawner.enabled = true;
 
         playerRB.gravityScale = 2.8f;
-        playerController.OnJump();
         playerController.enabled = true;
 
         scoreText.SetActive(true);
-
         startscreen.SetActive(false);
-        startButton.SetActive(false);
-
-        Debug.Log("Start button pressed");
+        gameStarter.enabled = false;
+        }
     } 
 }
