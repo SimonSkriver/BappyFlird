@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ScoreTrigger : ScoreManager
+public class ScoreTrigger : MonoBehaviour
 {
     private ScoreManager scoreManager;
 

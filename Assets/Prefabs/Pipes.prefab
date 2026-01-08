@@ -53,6 +53,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -74,6 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -288426109
   m_SortingLayer: 3
   m_SortingOrder: 0
@@ -187,6 +190,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -208,6 +213,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -288426109
   m_SortingLayer: 3
   m_SortingOrder: 0
@@ -278,7 +284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3461904400050044837}
   - component: {fileID: 1515890336440518197}
-  - component: {fileID: 7444393197130066445}
+  - component: {fileID: 1356262088398772078}
   m_Layer: 0
   m_Name: ScoreTrigger
   m_TagString: Untagged
@@ -347,7 +353,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.924567, y: 4.1742535}
   m_EdgeRadius: 0
---- !u!114 &7444393197130066445
+--- !u!114 &1356262088398772078
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -358,7 +364,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c28b24d64526edb4e91be33f7fdc604f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScoreTrigger
 --- !u!1 &8528389173650164703
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,7 +375,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5786667650360396569}
   - component: {fileID: 2414079153529951562}
-  - component: {fileID: 3853747614065168639}
   m_Layer: 0
   m_Name: Pipes
   m_TagString: Pipe
@@ -408,15 +413,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.8
---- !u!114 &3853747614065168639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8528389173650164703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c81219598b9bda4aa1a6f8dcbd61f94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
