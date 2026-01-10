@@ -26,18 +26,18 @@ public class GameStarter : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKey(KeyCode.Mouse0))
         {
-        backgroundloop1.enabled = true;
-        backgroundloop2.enabled = true;
-        groundloop1.enabled = true;
-        groundloop2.enabled = true;
-        pipeSpawner.enabled = true;
+            backgroundloop1.enabled = true;
+            backgroundloop2.enabled = true;
+            groundloop1.enabled = true;
+            groundloop2.enabled = true;
+            pipeSpawner.enabled = true;
 
-        playerRB.gravityScale = 2.8f;
-        playerController.enabled = true;
+            playerRB.gravityScale = 2.8f;
+            playerController.enabled = true;
 
-        scoreText.SetActive(true);
-        startscreen.SetActive(false);
-        gameStarter.enabled = false;
+            scoreText.SetActive(true);
+            startscreen.SetActive(false);
+            gameStarter.enabled = false;
         }
     } 
 }
