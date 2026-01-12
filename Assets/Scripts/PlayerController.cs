@@ -10,6 +10,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Rigidbody2D rb;
     [SerializeField] Animator anim;
 
+    [Header ("Audio")]
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip flap;
+    [SerializeField] AudioClip die;
+    [SerializeField] AudioClip hit;
+
     [Header ("Alive status")]
     public bool isAlive = true;
 
@@ -30,12 +36,15 @@ public class PlayerController : MonoBehaviour
         {
             rb.linearVelocity = Vector2.up * jumpForce;
             anim.SetTrigger("Jump");
+            audioSource.PlayOneShot(flap);
         }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
+        audioSource.PlayOneShot(die);
+        audioSource.PlayOneShot(hit);
+        //Destroy(gameObject);
         isAlive = false;
     }
 

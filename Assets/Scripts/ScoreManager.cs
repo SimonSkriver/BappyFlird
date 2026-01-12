@@ -6,7 +6,7 @@ public class ScoreManager : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] TextMeshProUGUI highscoreText;
-    [SerializeField] int score;
+    [SerializeField] public int score;
     private int highscore;
 
     void Start()
