@@ -5,7 +5,6 @@ public class PipeSpawner : MonoBehaviour
     [Header ("Pipe settings")]
     [SerializeField] GameObject stillPipe;
     [SerializeField] GameObject slowMovingPipe;
-    [SerializeField] GameObject[] allPipes;
     [SerializeField] float spawnRate = 2f;
 
     [Header ("Score manager")]
@@ -41,7 +40,7 @@ public class PipeSpawner : MonoBehaviour
         else
         {
             float roll = Random.value;
-            if (roll < 0.3f)
+            if (roll < 0.35f)
             {
                 Instantiate(slowMovingPipe, new Vector2(4, Random.Range(2f, 8.5f)), transform.rotation);
             }

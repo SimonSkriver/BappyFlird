@@ -1127,9 +1127,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stillPipe: {fileID: 8528389173650164703, guid: 2ab2c1e6d2b06c246965f84e6882a94d, type: 3}
   slowMovingPipe: {fileID: 8528389173650164703, guid: e86fdd1121f0bf044903e61047ea99e6, type: 3}
-  allPipes:
-  - {fileID: 8528389173650164703, guid: 2ab2c1e6d2b06c246965f84e6882a94d, type: 3}
-  - {fileID: 8528389173650164703, guid: e86fdd1121f0bf044903e61047ea99e6, type: 3}
   spawnRate: 1.35
   scoreManager: {fileID: 907403616}
 --- !u!4 &907403614
