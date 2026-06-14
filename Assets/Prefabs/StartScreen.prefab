@@ -41,18 +41,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6987658717138727489}
     m_Modifications:
-    - target: {fileID: 621329057261224455, guid: cacd5edd1e45dca408c020f510b50ca5, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -7133769912304366520, guid: 04416c4b271abd245a6ca2dcd297f644, type: 3}
-    - target: {fileID: 621329057261224455, guid: cacd5edd1e45dca408c020f510b50ca5, type: 3}
-      propertyPath: m_SortingLayer
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 621329057261224455, guid: cacd5edd1e45dca408c020f510b50ca5, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1360528363
-      objectReference: {fileID: 0}
     - target: {fileID: 7100423897205255926, guid: cacd5edd1e45dca408c020f510b50ca5, type: 3}
       propertyPath: m_Name
       value: FlappyBird
@@ -119,30 +107,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tap
       objectReference: {fileID: 0}
-    - target: {fileID: 866771724263152366, guid: fda99a689f179b34e98629b45b1f0ae8, type: 3}
-      propertyPath: m_SortingLayer
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 866771724263152366, guid: fda99a689f179b34e98629b45b1f0ae8, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1360528363
-      objectReference: {fileID: 0}
-    - target: {fileID: 916257289232894591, guid: fda99a689f179b34e98629b45b1f0ae8, type: 3}
-      propertyPath: m_SortingLayer
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 916257289232894591, guid: fda99a689f179b34e98629b45b1f0ae8, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1360528363
-      objectReference: {fileID: 0}
-    - target: {fileID: 4230602554424693940, guid: fda99a689f179b34e98629b45b1f0ae8, type: 3}
-      propertyPath: m_SortingLayer
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4230602554424693940, guid: fda99a689f179b34e98629b45b1f0ae8, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1360528363
-      objectReference: {fileID: 0}
     - target: {fileID: 8435765044316190472, guid: fda99a689f179b34e98629b45b1f0ae8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -186,40 +150,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 765802651927370104, guid: fda99a689f179b34e98629b45b1f0ae8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3032588183765353907}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fda99a689f179b34e98629b45b1f0ae8, type: 3}
 --- !u!4 &4363196875311017540 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8435765044316190472, guid: fda99a689f179b34e98629b45b1f0ae8, type: 3}
   m_PrefabInstance: {fileID: 5304373860603156812}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4844824919826006068 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 765802651927370104, guid: fda99a689f179b34e98629b45b1f0ae8, type: 3}
-  m_PrefabInstance: {fileID: 5304373860603156812}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &3032588183765353907
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4844824919826006068}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4cda24fa13e4cac4ea0d30306faaed3a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
