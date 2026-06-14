@@ -3,18 +3,60 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public float jumpForce = 5f;
-    public Rigidbody2D rb;
+    [Header ("Movement settings")]
+    [SerializeField] float jumpForce = 5f;
+
+    [Header ("Components")]
+    [SerializeField] Rigidbody2D rb;
+    [SerializeField] Animator anim;
+
+    [Header ("Audio")]
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip flap;
+    [SerializeField] AudioClip die;
+    [SerializeField] AudioClip hit;
+
+    [Header ("Alive status")]
+    public bool isAlive = true;
+
+
+    void Start()
+    {
+        isAlive = true;
+    }
+
+    void Update()
+    {
+        CheckFalling();
+    }
 
     public void OnJump()
     {
-        Debug.Log("Jump key pressed");
-        rb.linearVelocity = Vector2.up * jumpForce;
+        if (isAlive)
+        {
+            rb.linearVelocity = Vector2.up * jumpForce;
+            anim.SetTrigger("Jump");
+            audioSource.PlayOneShot(flap);
+        }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
-        Debug.Log("Player collided with " + collision.gameObject);
+        audioSource.PlayOneShot(die);
+        audioSource.PlayOneShot(hit);
+        //Destroy(gameObject);
+        isAlive = false;
+    }
+
+    void CheckFalling()
+    {
+        if (rb.linearVelocityY > 0)
+        {
+            anim.SetBool("isFalling", false);
+        }
+        else if (rb.linearVelocityY <= 0)
+        {
+            anim.SetBool("isFalling", true); 
+        }
     }
 }

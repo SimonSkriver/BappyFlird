@@ -4,6 +4,9 @@ public class ScoreTrigger : MonoBehaviour
 {
     private ScoreManager scoreManager;
 
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip scoreSFX;
+
     void Start()
     {
         scoreManager = FindAnyObjectByType<ScoreManager>();
@@ -14,6 +17,7 @@ public class ScoreTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             scoreManager.AddScore();
+            audioSource.PlayOneShot(scoreSFX);
         }
     }
 }

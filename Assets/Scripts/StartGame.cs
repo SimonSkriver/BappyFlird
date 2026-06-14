@@ -29,9 +29,9 @@ public class StartGame : MonoBehaviour
         groundloop2.enabled = true;
         pipeSpawner.enabled = true;
 
-        playerController.enabled = true;
-        playerController.OnJump();
         playerRB.gravityScale = 2.8f;
+        playerController.OnJump();
+        playerController.enabled = true;
 
         scoreText.SetActive(true);
 

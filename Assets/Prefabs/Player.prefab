@@ -38,6 +38,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2762579909365649701
 SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -83,7 +84,8 @@ SpriteRenderer:
   m_SortingLayerID: -288426109
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4514805892046077403, guid: 89286ca3d2db6bd42b90b911b8619c04, type: 3}
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 2512569323679042151, guid: 0f1f98945000f3844b65dcdbfa1d9122, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -92,7 +94,6 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &5699315253754903741
 Rigidbody2D:
@@ -172,6 +173,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 8.3
   rb: {fileID: 5699315253754903741}
+  anim: {fileID: 0}
+  audioSource: {fileID: 0}
+  flap: {fileID: 0}
+  die: {fileID: 0}
+  hit: {fileID: 0}
+  isAlive: 1
 --- !u!114 &4599425474468750663
 MonoBehaviour:
   m_ObjectHideFlags: 0
